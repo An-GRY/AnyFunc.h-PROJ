@@ -1,26 +1,39 @@
+<!-- download.html -->
 
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnyFunc PROJ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Download AnyFunc Test</h1>
+<h1>AnyFunc PROJ</h1>
 
-<!-- ダウンロードリンク -->
-<a href="#" onclick="downloadTextFile('Hello, world!', 'test.txt')">Download Text File</a>
+<!-- GitHubリンクボタン -->
+<button onclick="redirectToGitHub()">Go to GitHub</button>
 
 <script>
-    // テキストファイルをダウンロードする関数
-    function downloadTextFile(text, fileName) {
-        var blob = new Blob([text], { type: 'text/plain' });
-        var link = document.createElement('a');
-        link.href = window.URL.createObjectURL(blob);
-        link.download = fileName;
-        link.click();
+    // GitHubページへリダイレクトする関数
+    function redirectToGitHub() {
+        // GitHubのリポジトリURL
+        var githubURL = 'https://github.com/yourusername/yourrepository';
+
+        // GitHubページにリダイレクト
+        window.location.href = githubURL;
     }
 </script>
 
