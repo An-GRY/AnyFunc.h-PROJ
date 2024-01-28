@@ -8,17 +8,33 @@
     <title>AnyFunc PROJ</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c3e50; /* ダークグレー */
+            color: #ecf0f1; /* 白い灰色 */
             text-align: center;
             margin: 50px;
         }
         button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 18px;
             cursor: pointer;
+            background-color: #3498db; /* 真っ青 */
+            color: #fff; /* 白 */
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9; /* ダークブルー */
         }
         .message {
-            margin-top: 20px;
+            background-color: #fff;
+            color: #333; /* 黒 */
+            border: 1px solid #3498db; /* 真っ青 */
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         code {
             display: block;
@@ -27,26 +43,32 @@
             background-color: #f8f8f8;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: 14px;
+            color: #333; /* 黒 */
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
 
-<h1>AnyFunc PROJ</h1>
+<h1 style="color: #3498db;">AnyFunc PROJ</h1>
 
 <!-- GitHubリンクボタン -->
-<button onclick="redirectToGitHub()">Go to GitHub</button>
+<button onclick="redirectToGitHub()">Download</button>
+
+<!-- GitHub Pageリンクボタン -->
+<button onclick="redirectToGitHubPage()">Github</button>
 
 <!-- メッセージ -->
 <div class="message">
-    <h2>AnyFunc.h-PROJ</h2>
-    <p>This Program More Compact, Easy The C++ Programming!</p>
-    <p>This Header File provides functions for Compact, Easy The C++ Programming.</p>
+    <h2 style="color: #3498db;">AnyFunc.h-PROJ</h2>
+    <p style="font-size: 16px;">This Program More Compact, Easy The C++ Programming!</p>
+    <p style="font-size: 16px;">This Header File provides functions for Compact, Easy The C++ Programming.</p>
 
-    <h3>Function List (1)</h3>
+    <h3 style="color: #3498db;">Function List (1)</h3>
     <code>AnyFunc::test("text")</code>
 
-    <h3>Sample</h3>
+    <h3 style="color: #3498db;">Sample</h3>
     <code>
         #include "AnyFunc.h"<br>
         <br>
@@ -56,21 +78,30 @@
         }
     </code>
 
-    <h3>Output</h3>
+    <h3 style="color: #3498db;">Output</h3>
     <code>Testing Message!</code>
 
-    <h3>How To Use It?</h3>
-    <p>Download Anyfunc.h and use it like a sample (Anyfunc:: functions are placed in int main()).</p>
+    <h3 style="color: #3498db;">How To Use It?</h3>
+    <p style="font-size: 16px;">Download Anyfunc.h and use it like a sample (Anyfunc:: functions are placed in int main()).</p>
 </div>
 
 <script>
     // GitHubページへリダイレクトする関数
     function redirectToGitHub() {
         // GitHubのリポジトリURL
-        var githubURL = 'https://github.com/yourusername/yourrepository';
+        var githubURL = 'https://github.com/An-GRY/AnyFunc.h-PROJ/releases/download/Alpha/AnyFunc.h';
 
         // GitHubページにリダイレクト
         window.location.href = githubURL;
+    }
+
+    // GitHub Pageへリダイレクトする関数
+    function redirectToGitHubPage() {
+        // GitHub PageのURL
+        var githubPageURL = 'https://github.com/An-GRY/AnyFunc.h-PROJ';
+
+        // GitHub Pageにリダイレクト
+        window.location.href = githubPageURL;
     }
 </script>
 
