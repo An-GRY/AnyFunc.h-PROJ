@@ -17,6 +17,17 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .message {
+            margin-top: 20px;
+        }
+        code {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -25,6 +36,32 @@
 
 <!-- GitHubリンクボタン -->
 <button onclick="redirectToGitHub()">Go to GitHub</button>
+
+<!-- メッセージ -->
+<div class="message">
+    <h2>AnyFunc.h-PROJ</h2>
+    <p>This Program More Compact, Easy The C++ Programming!</p>
+    <p>This Header File provides functions for Compact, Easy The C++ Programming.</p>
+
+    <h3>Function List (1)</h3>
+    <code>AnyFunc::test("text")</code>
+
+    <h3>Sample</h3>
+    <code>
+        #include "AnyFunc.h"<br>
+        <br>
+        int main() {<br>
+            &nbsp;&nbsp;AnyFunc::test("Testing Message!");<br>
+            &nbsp;&nbsp;return 0;<br>
+        }
+    </code>
+
+    <h3>Output</h3>
+    <code>Testing Message!</code>
+
+    <h3>How To Use It?</h3>
+    <p>Download Anyfunc.h and use it like a sample (Anyfunc:: functions are placed in int main()).</p>
+</div>
 
 <script>
     // GitHubページへリダイレクトする関数
